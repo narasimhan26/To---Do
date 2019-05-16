@@ -62,6 +62,12 @@ export default class App extends Component {
       this.setState({ noteText: ''})
     }
   }
+
+deleteNote(key){
+    this.state.noteArray.splice(key,1);
+    this.setState( { noteArray: this.state.noteArray})
+  }
+  
 }
 
 const styles = StyleSheet.create({
