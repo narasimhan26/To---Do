@@ -15,7 +15,7 @@ export default class App extends Component {
                 <Text style = {styles.notetext}>{this.props.val.note}</Text>
 
             </View>
-            <TouchableOpacity><Text style = {styles.delButton}> del </Text></TouchableOpacity>
+            <TouchableOpacity onPress = { this.props.deleteMethod}><Text style = {styles.delButton}> del </Text></TouchableOpacity>
 
         </View>
        
